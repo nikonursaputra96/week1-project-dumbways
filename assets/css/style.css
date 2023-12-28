@@ -1,7 +1,10 @@
 * {
     margin: 0;
-    padding: 0
-    ;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(213, 217, 222);
 }
 
 
@@ -9,7 +12,7 @@
 /* Navbar */
 .nav-home {
     height: 50px;
-    background-color: rgb(244,243,243);
+    background-color: rgb(244, 243, 243);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +48,7 @@ nav ul {
     width: 120px;
     height: 30px;
     display: flex;
-    background-color:  rgb(17,23,39);
+    background-color: rgb(17, 23, 39);
     justify-content: center;
     margin-right: 100px;
     align-items: center;
@@ -54,7 +57,7 @@ nav ul {
 }
 
 .nav-home :active {
-    color:black;
+    color: black;
     font-weight: bold;
 }
 
@@ -70,9 +73,9 @@ nav ul {
 .form {
     font-family: 'Poppins', sans-serif;
     display: flex;
-   flex-direction: column;
-   width: 350px;
-   margin: 20px auto;
+    flex-direction: column;
+    width: 350px;
+    margin: 20px auto;
 }
 
 form label {
@@ -113,10 +116,104 @@ form label {
 #submit {
     width: 90px;
     height: 24px;
-    background-color:rgb(17,23,39);
+    background-color: rgb(17, 23, 39);
     border-radius: 15px;
     color: white;
     margin: 30px 75%;
     border: 0;
 
+}
+
+
+
+/* Content */
+
+.content-head {
+    width: 75%;
+    height: 100%;
+    background-color: white;
+    margin: 5% auto;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    box-shadow: 0 0 50px 0;
+    border-radius: 20px;
+}
+
+.content-subhead {
+    width: 40%;
+    height: auto;
+    background-color: white;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.head-1 p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.head-1-sub1 {
+    background-color: rgb(17, 23, 39);
+    color: white;
+    border-radius: 12px;
+    padding: 6px;
+    font-size: 11px;
+    text-decoration: none;
+    width: 100px;
+}
+
+.head-1-sub2 {
+    font-size: 11px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    display: flex;
+    font-weight: bold
+}
+
+.head-2 {
+    text-align: center;
+    word-spacing: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.head-2 a img {
+    width: 6%;
+    height: auto
+}
+
+
+.head-3 {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0
+}
+
+.head-3 img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.head-4 {
+    background-color: rgb(248, 245, 245);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.head-4-sub1 {
+    font-size: 13px;
+    font-weight: bolder
+}
+
+.head-4-sub2 {
+    font-size: 9px;
+    font-weight: lighter
 }
