@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0
+    ;
+}
+
+
+
+/* Navbar */
+.nav-home {
+    height: 50px;
+    background-color: rgb(244,243,243);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav div a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li img {
+    width: 50px;
+    align-items: center;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+    margin-left: 70px;
+
+}
+
+.contact-nav {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    background-color:  rgb(17,23,39);
+    justify-content: center;
+    margin-right: 100px;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.nav-home :active {
+    color:black;
+    font-weight: bold;
+}
+
+.home {
+    font-weight: bold;
+}
+
+
+
+
+/* Contact Form */
+
+.form {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+   flex-direction: column;
+   width: 350px;
+   margin: 20px auto;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+#name {
+    height: 25px;
+    border: 0;
+    border-radius: 3px;
+}
+
+#email {
+    height: 25px;
+    border: 0;
+    border-radius: 3px;
+}
+
+#tel {
+    height: 25px;
+    border: 0;
+    border-radius: 3px;
+}
+
+#option {
+    height: 30px;
+    border: 0;
+    border-radius: 3px;
+}
+
+#textarea {
+    height: 100px;
+    resize: none;
+    border: 0;
+    border-radius: 3px;
+}
+
+#submit {
+    width: 90px;
+    height: 24px;
+    background-color:rgb(17,23,39);
+    border-radius: 15px;
+    color: white;
+    margin: 30px 75%;
+    border: 0;
+
+}
