@@ -70,6 +70,13 @@ nav ul {
 
 /* Contact Form */
 
+.h2-contact {
+    text-align: center;
+    font-family: 'Poppins', sans-serif ;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
 .form {
     font-family: 'Poppins', sans-serif;
     display: flex;
