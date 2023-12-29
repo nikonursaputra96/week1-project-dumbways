@@ -111,6 +111,7 @@ form label {
     height: 30px;
     border: 0;
     border-radius: 3px;
+    display: block
 }
 
 #textarea {
@@ -128,6 +129,7 @@ form label {
     color: white;
     margin: 30px 75%;
     border: 0;
+    cursor: pointer;
 
 }
 
