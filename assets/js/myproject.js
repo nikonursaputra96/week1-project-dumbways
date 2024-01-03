@@ -14,10 +14,11 @@ function myProject (e) {
     let image = document.getElementById('image').files;
     image= URL.createObjectURL(image[0]);
     
+
     // Calculation duration
-    let diffInMilliseconds = endDate - startDate;
-    let diffInMonths = diffInMilliseconds / (1000 * 60 * 60 * 24 * 30);
-    let totalMonth = Math.floor(diffInMonths)
+    let minDate = endDate - startDate;
+    let minMonth = minDate / (1000 * 60 * 60 * 24 * 30);
+    let totalMonth = Math.floor(minMonth)
 
     const myProject = {
         projectName,
@@ -80,7 +81,7 @@ function renderMyProject () {
     const container = document.querySelector('.container-master');
     container.style.display = 'grid';
     container.style.gridTemplateColumns = 'repeat(auto-fill, minmax(300px, 1fr))';
-    container.style.gridGap = '20px';
+    container.style.gridGap = '30px';
 
 }
 
