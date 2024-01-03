@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My project</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/myproject.css">
 </head>
 
@@ -30,7 +31,7 @@
     </nav>
 
 
-    <form action="" class="formMyProject">
+    <form action="" class="formMyProject" onsubmit="myProject(event)">
         <h2>ADD MY PROJECT</h2>
         <!-- Project name -->
         <div class="forminput">
@@ -41,11 +42,11 @@
         <div class="date">
             <div class="forminput">
                 <label for="startDate">Start Date</label>
-                <input type="text" id="startDate">
+                <input type="date" id="startDate">
             </div>
             <div class="forminput">
                 <label for="endDate">End Date</label>
-                <input type="text" id="endDate">
+                <input type="date" id="endDate">
             </div>
         </div>
         <!-- Description -->
@@ -57,11 +58,11 @@
 
 
         <div class="checkbox">
-            <label for="technologies" class="technologies">Technologies</label>
+            <label class="technologies">Technologies</label>
             <div class="inputcheckbox">
                 <div class="group-1">
                     <div class="checkbox-1">
-                        <input type="checkbox" id="nodejs">
+                        <input type="checkbox" id="nodejs" >
                         <label for="nodejs">Node Js</label>
                     </div>
                     <div class="checkbox-2">
@@ -103,104 +104,36 @@
 
 
     <!-- Card -->
-    <div class="container-master">
+    <div class="title">
         <h1>MY PROJECT</h1>
-        <div class="container-card">
+    </div>
+    <div class="container-master" id="container">
+        <!-- <div class="container-card">
             <div class="container-card-2">
                 <div class="container-content">
                     <img src="assets/img/image1.jpg" alt="smartphone" class="image-1">
                     <h4>Dumbways Mobile App - 2021</h4>
-                    <span>durasi : 3 bulan</span>
+                    <span id="totalMonth">durasi : 3 bulan</span>
                     <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy
                         download</p>
                 </div>
                 <div class="container-logo">
-                    <img src="assets/img/playstore.png" alt="logo-playstore" class="logo-playstore">
-                    <img src="assets/img/android.png" alt="logo-android" class="logo-android">
-                    <img src="assets/img/java.png" alt="logo-java" class="logo-java">
+                    <img src="assets/img/nodejs.png" alt="logo-nodejs" class="logo-nodejs" id="logo-nodejs">
+                    <img src="assets/img/reactjs.png" alt="logo-reactjs" class="logo-reactjs" id="logo-reactjs">
+                    <img src="assets/img/nextjs.png" alt="logo-nextjs" class="logo-nextjs" id="logo-nextjs">
+                    <img src="assets/img/typescript.png" alt="logo-typescript" class="logo-typescript" id="logo-typescript">
                 </div>
                 <div class="container-button">
                     <button class="edit-button">edit</button>
                     <button class="delete-button">delete</button>
                 </div>
             </div>
-            <div class="container-card-2">
-                <div class="container-content">
-                    <img src="assets/img/image1.jpg" alt="smartphone" class="image-1">
-                    <h4>Dumbways Mobile App - 2021</h4>
-                    <span>durasi : 3 bulan</span>
-                    <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy
-                        download</p>
-                </div>
-                <div class="container-logo">
-                    <img src="assets/img/playstore.png" alt="logo-playstore" class="logo-playstore">
-                    <img src="assets/img/android.png" alt="logo-android" class="logo-android">
-                    <img src="assets/img/java.png" alt="logo-java" class="logo-java">
-                </div>
-                <div class="container-button">
-                    <button class="edit-button">edit</button>
-                    <button class="delete-button">delete</button>
-                </div>
-            </div>
-            <div class="container-card-2">
-                <div class="container-content">
-                    <img src="assets/img/image1.jpg" alt="smartphone" class="image-1">
-                    <h4>Dumbways Mobile App - 2021</h4>
-                    <span>durasi : 3 bulan</span>
-                    <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy
-                        download</p>
-                </div>
-                <div class="container-logo">
-                    <img src="assets/img/playstore.png" alt="logo-playstore" class="logo-playstore">
-                    <img src="assets/img/android.png" alt="logo-android" class="logo-android">
-                    <img src="assets/img/java.png" alt="logo-java" class="logo-java">
-                </div>
-                <div class="container-button">
-                    <button class="edit-button">edit</button>
-                    <button class="delete-button">delete</button>
-                </div>
-            </div>
-            <div class="container-card-2">
-                <div class="container-content">
-                    <img src="assets/img/image1.jpg" alt="smartphone" class="image-1">
-                    <h4>Dumbways Mobile App - 2021</h4>
-                    <span>durasi : 3 bulan</span>
-                    <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy
-                        download</p>
-                </div>
-                <div class="container-logo">
-                    <img src="assets/img/playstore.png" alt="logo-playstore" class="logo-playstore">
-                    <img src="assets/img/android.png" alt="logo-android" class="logo-android">
-                    <img src="assets/img/java.png" alt="logo-java" class="logo-java">
-                </div>
-                <div class="container-button">
-                    <button class="edit-button">edit</button>
-                    <button class="delete-button">delete</button>
-                </div>
-            </div>
-            <div class="container-card-2">
-                <div class="container-content">
-                    <img src="assets/img/image1.jpg" alt="smartphone" class="image-1">
-                    <h4>Dumbways Mobile App - 2021</h4>
-                    <span>durasi : 3 bulan</span>
-                    <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy
-                        download</p>
-                </div>
-                <div class="container-logo">
-                    <img src="assets/img/playstore.png" alt="logo-playstore" class="logo-playstore">
-                    <img src="assets/img/android.png" alt="logo-android" class="logo-android">
-                    <img src="assets/img/java.png" alt="logo-java" class="logo-java">
-                </div>
-                <div class="container-button">
-                    <button class="edit-button">edit</button>
-                    <button class="delete-button">delete</button>
-                </div>
-            </div>
-        </div>
+          
+        </div> -->
 
     </div>
 
-
+<script src="myproject.js"></script>
 </body>
 
 </html>

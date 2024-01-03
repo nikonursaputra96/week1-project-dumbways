@@ -118,6 +118,20 @@ h2 {
     border-radius: 3px;
 }
 
+input[type="date"] {
+    color: transparent;
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: white no-repeat;
+    color: transparent;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
 
 /* Description */
 .description {
@@ -246,14 +260,17 @@ h2 {
 
 /* Card */
 
-.container-master {
+.title h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(238, 235, 235);
+    padding: 50px;
+    margin-bottom: -20px;
 }
 
-.container-master h1 {
-    padding-top: 60px;
-    margin-bottom: 50px;
-    text-align: center;
+.container-master {
+    background-color: rgb(238, 235, 235);
 }
 
 .container-card {
@@ -270,15 +287,20 @@ h2 {
     border-radius: 5px;
     box-shadow: 0 0 10px rgb(153, 151, 151);
     overflow: hidden;
-    margin: 5px;
     padding: 10px;
 
 }
 
+.container-content {
+    margin: 5px;
+}
+
+.container-content h4 {
+    margin-top: 5px;
+}
 
 .container-content span {
     font-size: 11px;
-    margin-top: -3px;
     display: flex;
     margin-bottom: 15px;
     color: rgb(107, 104, 104);
@@ -293,6 +315,8 @@ h2 {
     margin-bottom: 20px;
     display: flex;
     gap: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .container-button {
@@ -312,12 +336,19 @@ h2 {
 }
 
 /* image card */
-.logo-playstore, .logo-android, .logo-java {
+.logo-nodejs {
+    width: 25px;
+    height: 25px;
+}
+
+
+.logo-typescript , .logo-reactjs , .logo-nextjs{
     width: 20px;
-    height: 23px;
+    height: 20px;
 }
 
 .image-1 {
-    width: 305px;
+    width: 295px;
     height: auto;
+    border-radius: 10px;
 }
