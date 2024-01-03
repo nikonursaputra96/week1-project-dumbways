@@ -56,12 +56,11 @@ nav ul {
 
 }
 
-.nav-home :active {
+.navbar-link {
     color: black;
-    font-weight: bold;
 }
 
-.home {
+.active {
     font-weight: bold;
 }
 
