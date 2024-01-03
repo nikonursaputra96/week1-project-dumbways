@@ -80,10 +80,9 @@ function renderMyProject () {
 
     const container = document.querySelector('.container-master');
     container.style.display = 'grid';
-    container.style.gridTemplateColumns = 'repeat(auto-fill, minmax(300px, 1fr))';
+    container.style.gridTemplateColumns = 'repeat(auto-fill, minmax(380px, 1fr))';
     container.style.gridGap = '20px';
     container.style.padding = '20px';
-    container.style.justifyContent = 'center';
 
 }
 
