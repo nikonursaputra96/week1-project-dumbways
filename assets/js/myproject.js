@@ -38,6 +38,12 @@ function myProject (e) {
 
 }
 
+// Delete 1 card
+function deleteProject(index) {
+    myProjects.splice(index, 1);
+    renderMyProject(); 
+}
+
 
 function renderMyProject () {
 
@@ -61,8 +67,8 @@ function renderMyProject () {
                 <img src="${myProjects[i].typescript ? "assets/img/typescript.png" : "" }"  alt="logo-typescript" class="logo-typescript" id="logoTypescript" style="${!myProjects[i].typescript ? 'display: none;' : ''}">
             </div>
             <div class="container-button">
-                <button class="edit-button">edit</button>
-                <button class="delete-button">delete</button>
+                <button onclick="window.location.href='detail.html?id=${i}'" class="edit-button">edit</button>
+                <button class="delete-button" onclick="deleteProject(${i})">delete</button>
             </div>
         </div>
       
@@ -70,6 +76,12 @@ function renderMyProject () {
     }
 
     document.getElementById('container').innerHTML = html
+
+    const container = document.querySelector('.container-master');
+    container.style.display = 'grid';
+    container.style.gridTemplateColumns = 'repeat(auto-fill, minmax(300px, 1fr))';
+    container.style.gridGap = '20px';
+
 }
 
 renderMyProject ()
