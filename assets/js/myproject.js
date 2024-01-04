@@ -68,7 +68,7 @@ function renderMyProject() {
 
 
     for (let i = 0; i < myProjects.length; i++) {
-   
+
         html += `<div class="container-card">
         <div class="container-card-2">
             <div class="container-content">
@@ -84,19 +84,14 @@ function renderMyProject() {
                 <img src="${myProjects[i].typescript ? "assets/img/typescript.png" : ""}"  alt="logo-typescript" class="logo-typescript" id="logoTypescript" style="${!myProjects[i].typescript ? 'display: none;' : ''}">
             </div>
             <div class="container-button">
-                <button onclick="window.location.href='detail.html?id=${i}'" class="edit-button">edit</button>
+                <button onclick="saveToLocalStorage(${i})"  class="edit-button">edit</button>
                 <button class="delete-button" onclick="deleteProject(${i})">delete</button>
             </div>
         </div>
-      
+        
     </div>`
-
-    
     }
-
     
-
-
     document.getElementById('container').innerHTML = html
 
     const container = document.querySelector('.container-master');
@@ -108,3 +103,10 @@ function renderMyProject() {
 }
 
 renderMyProject()
+
+    // Save to Local Storage
+    function saveToLocalStorage(index) {
+        localStorage.setItem('selectedProject', JSON.stringify(myProjects[index]));
+        window.location.href = `detail.html?id=${index}`;
+    }
+

@@ -55,7 +55,7 @@
                         <img src="assets/img/nodejs.png" alt="logo-nodejs" class="logo-nodejs" id="logo-nodejs">
                         <p class="p-nodejs">Node Js</p>
                         <img src="assets/img/reactjs.png" alt="logo-reactjs" class="logo-reactjs" id="logo-reactjs">
-                        <p  class="p-reactjs">React Js</p>
+                        <p class="p-reactjs">React Js</p>
                     </div>
                     <div class="techno-2">
                         <img src="assets/img/nextjs.png" alt="logo-nextjs" class="logo-nextjs" id="logo-nextjs">
@@ -109,8 +109,40 @@
 
         </div>
     </div>
+    <script src="assets/js/myproject.js"></script>
+    <script>
 
+        document.addEventListener('DOMContentLoaded', function () {
+            const selectData = JSON.parse(localStorage.getItem('selectedProject'));
+            const durationDates = document.getElementById('durationDate');
+            const durationTimes = document.getElementById('durationTime');
 
+            if (selectData) {
+                const formattedStartDate = formatDate(new Date(selectData.startDate));
+                const formattedEndDate = formatDate(new Date(selectData.endDate));
+
+                durationDates.textContent = `${formattedStartDate} - ${formattedEndDate}`;
+                durationTimes.textContent = selectData.totalMonth;
+            } else {
+                console.log("No data in local storage");
+            }
+        });
+
+        function formatDate(dates) {
+            
+            const date = dates.getDate()
+            const month = dates.getMonth()
+            const year = dates.getFullYear()
+            
+            const months = [
+                "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                "Jul", "Aug", "Sep", "Okt", "Nov", "Des"
+            ];
+          
+            return `${date} ${months[month]} ${year}`;
+        }
+
+    </script>
 </body>
 
 </html>
