@@ -94,6 +94,11 @@ nav ul {
 
 /* Contact Form */
 
+.actives {
+    color: white;
+    font-weight: bold;
+}
+
 .h2-contact {
     text-align: center;
     font-weight: bold;
@@ -228,6 +233,7 @@ form label {
     display: flex;
     gap: 25px;
     margin-top: 35px;
+    cursor: pointer;
 
 
 }
