@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body style="background-color: rgb(213,217,222);">
-
+<body>
+<!-- NAVBAR -->
     <nav class="nav-home">
         <ul>
             <li>
                 <a href="#"><img class="imglogo" src="assets/img/logodumbways.png" alt="Logo Dumbways"></a>
             </li>
+            <i class="fa-solid fa-bars" onclick="navbar()"></i>
             <li class="home">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="navbar-link active">Home</a>
             </li>
-            <li>
+            <li class="myproject">
                 <a href="myproject.html">My Project</a>
             </li>
 
@@ -30,6 +30,21 @@
             <a href="contact.html">Contact Me</a>
         </div>
     </nav>
+
+    <nav class="nav-mobile" id="navMobile">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="myproject.html">My Project</a>
+            </li>
+            <li>
+                <a href="contact.html"  class="active">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+
 
     <!-- Contact Form -->
     <h2 class="h2-contact">GET IN TOUCH</h2>
@@ -53,4 +68,5 @@
 
 
     <script src="assets/js/data.js"></script>
+    <script src="assets/js/navmobile.js"></script>
 </body>

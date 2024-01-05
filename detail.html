@@ -11,16 +11,18 @@
 </head>
 
 <body>
-    <nav class="nav-home">
+     <!-- Navbar -->
+     <nav class="nav-home">
         <ul>
             <li>
                 <a href="#"><img class="imglogo" src="assets/img/logodumbways.png" alt="Logo Dumbways"></a>
             </li>
+            <i class="fa-solid fa-bars" onclick="navbar()"></i>
             <li class="home">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="navbar-link active">Home</a>
             </li>
-            <li>
-                <a href="myproject.html" class="active">My Project</a>
+            <li class="myproject">
+                <a href="myproject.html">My Project</a>
             </li>
 
         </ul>
@@ -28,6 +30,22 @@
             <a href="contact.html">Contact Me</a>
         </div>
     </nav>
+
+    <nav class="nav-mobile" id="navMobile">
+        <ul>
+            <li>
+                <a href="index.html" >Home</a>
+            </li>
+            <li>
+                <a href="myproject.html" class="active">My Project</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+
+
 
     <!-- Detail Page here -->
 

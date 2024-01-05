@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -18,10 +17,11 @@
             <li>
                 <a href="#"><img class="imglogo" src="assets/img/logodumbways.png" alt="Logo Dumbways"></a>
             </li>
+            <i class="fa-solid fa-bars" onclick="navbar()"></i>
             <li class="home">
                 <a href="index.html" class="navbar-link active">Home</a>
             </li>
-            <li>
+            <li class="myproject">
                 <a href="myproject.html">My Project</a>
             </li>
 
@@ -31,36 +31,45 @@
         </div>
     </nav>
 
+    <nav class="nav-mobile" id="navMobile">
+        <ul>
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
+            <li>
+                <a href="myproject.html">My Project</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+
     <!-- Content -->
     <div class="content-head">
         <div class="content-subhead">
             <div class="head-1">
-                <h3>Hi Welcome to my hut</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Asperiores animi
-                    sequi quam iste ab exercitationem corrupti ipsum, unde fuga obcaecati earum nam quisquam itaque
-                    harum. Labore temporibus explicabo ratione iste?Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Ipsam dolorum aliquam corporis maxime repudiandae harum temporibus ea, nobis veniam in quaerat
-                    tenetur nemo laboriosam debitis eaque illum. Amet, possimus nulla?</p>
-                <a class="head-1-sub1" href="contact.html">
-                    Contact
-                </a>
-                <a href="#" class="head-1-sub2">
-                    download CV 📥
-                </a>
+                <h2>Hi Welcome to my hut</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium ut nemo ad vitae minima non numquam possimus aut nesciunt earum?
+                Incidunt, doloribus? Accusantium culpa magnam, laboriosam, laudantium blanditiis assumenda placeat reprehenderit, sequi accusamus ex eius similique fugiat tenetur quidem amet.
+                Animi, obcaecati voluptatibus ducimus error pariatur quis corrupti amet sint tenetur delectus, tempore quia aperiam ex porro ratione. Natus, odit.
+                Vero voluptatem saepe quaerat rerum molestiae sed magnam labore tenetur maiores dignissimos! Sequi atque blanditiis saepe est optio molestias non!</p>
+                    <div class="head-1-contact">
+                        <a class="head-1-sub1" href="contact.html">
+                            contact
+                        </a>
+                        <a href="#" class="head-1-sub2">
+                            download CV <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                    <div class="head-2">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                        <i class="fa-brands fa-square-instagram fa-2x"></i>
+                        <i class="fa-brands fa-square-facebook fa-2x"></i>
+                        <i class="fa-brands fa-square-x-twitter fa-2x"></i>
+                    </div>
             </div>
-
-            <div class="head-2">
-                <a href="#"> <img src="assets/img/Linkedin.png" alt="Logo Linkedin"></a>
-                <a href="#"> <img src="assets/img/instagram.png" alt="Logo Instagram"></a>
-                <a href="#">
-                    <img src="assets/img/twitter.png" alt="Logo Twitter"></a>
-                <a href="#">
-                    <img src="assets/img/facebook.png" alt="Logo Facebook"></a>
-
-
-            </div>
-
+            
             <div class="head-3">
                 <img src="assets/img/niko (2).jpg" alt="Gambar"></td>
                 <div class="head-4">
@@ -71,6 +80,7 @@
         </div>
 
     </div>
+    <script src="assets/js/navmobile.js"></script>
 </body>
 
 </html>

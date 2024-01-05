@@ -18,7 +18,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
 }
 
 nav ul li a {
@@ -67,12 +66,45 @@ nav ul {
 }
 
 
+.nav-mobile {
+    width: 100vw;
+    background-color: rgb(244, 243, 243);
+    display: flex;
+
+}
+
+.nav-mobile ul {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(244, 243, 243);
+}
+
+.nav-mobile ul :hover {
+    background-color: rgb(219, 213, 213);
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: 900;
+}
 
 
-/* Form */
+.fa-bars {
+    cursor: pointer;
+}
+
+
+
+
+
+/* Form */ 
+/* MYPROJECT.HTML */
 
 .formMyProject {
-    width: 350px;
+    width: 25%;
     margin: 50px auto;
 
 }
@@ -351,4 +383,160 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 295px;
     height: auto;
     border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media only screen and (max-width : 575.98px) {
+
+    /* NAVBAR */
+.home, .myproject, .contact-nav {
+    display: none;
+}
+
+.nav-home ul {
+    display: flex;
+    gap: 55vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.imglogo {
+    margin-left: -20px;
+}
+
+
+
+.formMyProject {
+    width: 40vmax;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+
+
+#submit {
+    width: 90px;
+    height: 24px;
+    background-color: rgb(17, 23, 39);
+    border-radius: 15px;
+    color: white;
+    margin: 30px auto;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+}
+
+.group-1 {
+    margin-right: 0 auto;
+    overflow: hidden;
+}
+
+.checkbox {
+    overflow: hidden;
+}
+
+.container-master {
+ overflow: hidden;
+}
+
+}
+
+
+
+@media only screen and (min-width: 1224px) {
+    .fa-bars {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+    .fa-bars {
+        display: none;
+    }
+
+    
+    .nav-mobile {
+        display: none;
+    }
+
+
+    
+    .formMyProject {
+        width: 75%;
+        margin: 50px auto;
+        overflow: hidden;
+    }
+    
+    
+    
+    #submit {
+        width: 90px;
+        height: 24px;
+        background-color: rgb(17, 23, 39);
+        border-radius: 15px;
+        color: white;
+        margin: 30px auto;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    
 }
