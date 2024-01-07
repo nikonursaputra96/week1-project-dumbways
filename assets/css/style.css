@@ -389,7 +389,7 @@ form label {
 
     }
 
-    .home, .myproject, .contact-nav {
+    .home, .myproject, .contact-nav, .testimonial {
         display: none;
     }
 

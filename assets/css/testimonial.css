@@ -1,14 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     background-color: rgb(213, 217, 222);
     font-family: 'Poppins', sans-serif;
-
 }
+
+
 
 
 /* Navbar */
@@ -92,116 +92,82 @@ nav ul {
 }
 
 
-.fa-bars {
-    cursor: pointer;
-}
+/* CONTENT TESTIMONIAL */
 
 
 
-/* Detail CSS */
-
-.container-detail {
-    padding: 50px;
-}
-
-.title h1 {
+.title-testi {
     text-align: center;
-    margin-bottom: 40px;
+    margin-top: 40px;
 }
-
-.container-content {
+.testimonial-content {
     display: flex;
-    gap: 50px;
-    margin-bottom: 30px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    overflow: hidden;
 
 }
 
-.image img {
-    width: 600px;
-    height: 400px;
+.testimonial-content div {
+    background-color: rgb(244, 243, 243);
+    height: auto;
+    padding: 15px;
     border-radius: 5px;
-}
-
-.container-time {
-    width: 50%;
-}
-
-.duration i {
-    width: 100%;
-    letter-spacing: 3px;
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 20px;
-
-}
-
-.duration-title {
-    font-weight: 800;
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-.duration-time, .duration-date {
-    font-size: 10px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    margin-left: 15px;
-}
-
-
-.technologies-title {
-    font-weight: 600;
+    box-shadow: 0 0 5px 3px rgb(199, 199, 199);
     margin-top: 50px;
-    margin-bottom: 5px;
-    font-size: 20px;
 }
 
-
-.techno-1, .techno-2 {
+.img-testi {
+    height: 200px;
     display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.techno-1 {
-    margin-bottom: 15px;
-}
-
-.p-nodejs {
-    margin-right: 20px;
-}
-
-.p-nextjs {
-    margin-right: 30px;
-    margin-left: 15px;
-}
-
-
-.techno-1 p, .techno-2 p {
-    font-size: 15px;
-}
-
-.logo-nodejs {
-    width: 50px;
-    height: 50px;
+    margin: 0 auto;
+    border-radius: 5px;
 
 }
 
-.logo-nextjs {
-    margin-left: 5px;
+.quote {
+    font-style: italic;
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+    font-size: .8rem;
 }
 
-.logo-typescript, .logo-reactjs, .logo-nextjs {
-    width: 30px;
-    height: 30px;
 
+.author {
+    font-weight: 800;
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    font-size: 1rem;
 }
 
 
-.content {
-    text-align: justify;
-    text-indent: 10px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -226,34 +192,11 @@ nav ul {
 }
 
 
-/* Detail CSS */
+    /* Content */
 
-
-.title h1 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.container-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.image img {
-    width: 40vmax;
-    height: auto;
-    margin: 0 auto;
-}
-
-.container-time {
-    width: 50%;
- 
-}
-
-.duration {
-    width: 40vh;
-}
-
+    .testimonial-content {
+        gap: 15px;
+    }
 
 
 }
@@ -268,6 +211,8 @@ nav ul {
     .nav-mobile {
         display: none;
     }
+
+
 }
 
 
@@ -281,39 +226,12 @@ nav ul {
         display: none;
     }
 
-
-/* Detail CSS */
-
-
-.title h1 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.container-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.image img {
-    width: 40vmax;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-}
-
-.container-time {
-    width: 50%;
- 
-}
-
-.duration {
-    width: 40vh;
-
-}
+    .testimonial-content {
+        gap: 40px;
+    }
 
 
-    
+
    
     
 }

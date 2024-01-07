@@ -438,9 +438,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @media only screen and (max-width : 575.98px) {
 
     /* NAVBAR */
-.home, .myproject, .contact-nav {
-    display: none;
-}
+.home, .myproject, .contact-nav, .testimonial {
+        display: none;
+    }
+
 
 .nav-home ul {
     display: flex;
