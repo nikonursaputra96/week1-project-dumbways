@@ -100,6 +100,7 @@ nav ul {
     text-align: center;
     margin-top: 40px;
 }
+
 .testimonial-content {
     display: flex;
     margin: 0 auto;
@@ -116,7 +117,6 @@ nav ul {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 5px 3px rgb(199, 199, 199);
-    margin-top: 50px;
 }
 
 .img-testi {
@@ -144,6 +144,24 @@ nav ul {
     font-size: 1rem;
 }
 
+/* Button Star */
+
+.star-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.star-button i, .star-button p {
+    cursor: pointer;
+    width: 4vmax;
+    padding: 5px;
+    background-color: rgb(244, 243, 243);
+    font-size: 1em;
+}
 
 
 
@@ -175,63 +193,76 @@ nav ul {
 @media only screen and (max-width : 575.98px) {
 
     /* NAVBAR */
-.home, .myproject, .contact-nav, .testimonial {
-    display: none;
-}
+    .home, .myproject, .contact-nav, .testimonial {
+        display: none;
+    }
 
 
-.nav-home ul {
-    display: flex;
-    gap: 55vw;
-    justify-content: center;
-    align-items: center;
-}
+    .nav-home ul {
+        display: flex;
+        gap: 55vw;
+        justify-content: center;
+        align-items: center;
+    }
 
-.imglogo {
-    margin-left: -20px;
-}
+    .imglogo {
+        margin-left: -20px;
+    }
 
 
     /* Content */
 
     .testimonial-content {
         gap: 15px;
+        overflow: hidden;
     }
 
+    .testimonial-content div {
+        overflow: hidden;
+    };
 
-}
+    /* Star button */
 
-
-
-@media only screen and (min-width: 1224px) {
-    .fa-bars {
-        display: none;
+    .star-button i, .star-button p {
+        width: 16vw;
     }
 
-    .nav-mobile {
-        display: none;
+    .star-button {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
     }
 
-
-}
-
-
-@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
-    .fa-bars {
-        display: none;
-    }
-
-    
-    .nav-mobile {
-        display: none;
-    }
-
-    .testimonial-content {
-        gap: 40px;
     }
 
 
 
-   
-    
-}
+
+    @media only screen and (min-width: 1224px) {
+        .fa-bars {
+            display: none;
+        }
+
+        .nav-mobile {
+            display: none;
+        }
+
+
+    }
+
+
+    @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+        .fa-bars {
+            display: none;
+        }
+
+
+        .nav-mobile {
+            display: none;
+        }
+
+        .testimonial-content {
+            gap: 40px;
+        }
+
+    }

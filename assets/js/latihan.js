@@ -301,3 +301,198 @@ for (let index = 0; index < testimonials.length; index++) {
 }
 
 document.getElementById("testimonials").innerHTML = testimonialsHTML
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// HOF & CALLBACK
+
+// built in HOF array -> bawaan dari javascript
+// forEach, map, filter, reduce
+
+// forEach
+// const arr = [1,2,3,4,5]
+
+// arr.forEach((x, y) => {
+//     arr[y] = x * 2
+// })
+
+// const newArr = arr.forEach((item, index) => {
+//     arr[index] = item * 2
+// })
+
+// console.log(newArr)
+// console.log("ini array aslinya",arr)
+
+// map
+// const arr = [1,2,3,4,5,6,7,8,9,10]
+
+// const newArr = arr.map((item, index) => {
+//     if(item % 2 === 0) {
+//         return item
+//     }
+// }) // array baru
+
+// console.log(newArr)
+
+// filter
+// const arr = [1,2,3,4,5,6,7,8,9,10]
+
+// 1 % 2 = 1
+// 2 % 2 = 0
+// 3 % 2 = 1
+// 4 % 2 = 0 
+
+// const filteredArray = arr.filter((item, index) => {
+//     if(item % 2 === 0) {
+//         return true
+//     }
+//     // mengembalikan boolean : true OR false
+// })
+
+// console.log(filteredArray)
+
+// reduce
+// const arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+// const sum = arr.reduce((total, current) => {
+//     return total + current
+// }, 100)
+
+// console.log(sum)
+
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { c: 3, d: 4 };
+// const obj3 = { e: 5, f: 6 };
+
+// const arr = [obj1, obj2, obj3]
+
+// const mergedObj = arr.reduce((acc, curr) => {
+//     return { ...acc, ...curr };
+// }, {});
+// console.log(mergedObj); // { a: 1, b: 2, c: 3, d: 4, e: 5, f: 6 }
+
+
+
+
+
+
+// latihan 2
+function callbackFunction() {
+    console.log("Halo saya adalah callback function")
+}
+
+function higherOrderFunction(callback) {
+    console.log("Ini adalah console dari higher order function")
+    callback()
+}
+
+higherOrderFunction(callbackFunction)
+
+// custom HOF
+
+const radius = [1, 2, 3, 4, 5]
+const radius2 = [10, 20, 30]
+
+const area = function (radius) {
+    return Math.PI * radius * radius
+}
+
+const diameter = function (radius) {
+    return 2 * radius
+}
+
+const kelilinglingkaran = function (radius) {
+    return 2 * Math.PI * radius * radius
+}
+
+const calculate = function (radius, logic) {
+    const output = []
+    for (let index = 0; index < radius.length; index++) {
+        output.push(logic(radius[index]))
+    }
+    return output
+}
+
+console.log(calculate(radius, area))
+console.log(calculate(radius2))
+
+
+
+
+// CONTOH 
+const testimonialss = [
+    {
+        author: "Surya Elidanto",
+        content: "Siplah oke",
+        image: "https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        rating: 3
+    },
+    {
+        author: "Renaldi",
+        content: "Apasih bang",
+        image: "https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=600",
+        rating: 4,
+    },
+    {
+        author: "Fandi",
+        content: "Mantap bro",
+        image: "https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&w=600",
+        rating: 3,
+    },
+    {
+        author: "Orang baru",
+        content: "Mantap bro",
+        image: "https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&w=600",
+        rating: 1
+    },
+    {
+        author: "Orang baru",
+        content: "Mantap bro",
+        image: "https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&w=600",
+        rating: 2
+    }
+]
+
+function allTestimonial() {
+    const testimonialHTML = testimonials.map((value) => {
+        return `<div class="testimonial">
+                <img src="${value.image}" class="profile-testimonial" />
+                <p class="quote">"${value.content}"</p>
+                <p class="author">- ${value.author}</p>
+            </div>`
+    })
+    
+    document.getElementById("testimonials").innerHTML = testimonialHTML.join(" ")
+}
+
+function filterTestimonial(rating) {
+    const filteredTestimonial = testimonials.filter((value) => value.rating === rating)
+
+    const filteredTestimonialHTML = filteredTestimonial.map((value) => {
+        return `<div class="testimonial">
+                <img src="${value.image}" class="profile-testimonial" />
+                <p class="quote">"${value.content}"</p>
+                <p class="author">- ${value.author}</p>
+            </div>`
+    })
+
+    document.getElementById("testimonials").innerHTML = filteredTestimonialHTML.join(" ")
+}
+
+allTestimonial()
