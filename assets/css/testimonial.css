@@ -237,6 +237,26 @@ nav ul {
 
 
 
+    /* LOADING Codepen  */
+    #loading {
+        background-color:rgb(213, 217, 222);
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border: 8px solid rgba(255, 255, 255, 0.171);
+        border-radius: 50%;
+        border-top-color: black;
+        animation: spin 1s ease-in-out infinite;
+        -webkit-animation: spin 1s ease-in-out infinite;
+      }
+      
+      @keyframes spin {
+        to { -webkit-transform: rotate(360deg); }
+      }
+      @-webkit-keyframes spin {
+        to { -webkit-transform: rotate(360deg); }
+      }
+
 
     @media only screen and (min-width: 1224px) {
         .fa-bars {
